@@ -125,8 +125,15 @@ a {
     text-align: center;
 }
 .tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 33%;
     max-width: 150px;
+}
+.fab {
+    font-size: 15vw;
+    -webkit-font-smoothing: antialiased;
 }
 img {
     width: 100%;
