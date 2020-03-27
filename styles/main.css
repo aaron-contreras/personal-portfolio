@@ -69,6 +69,10 @@ a {
     padding: 10px 25px;
     border-bottom: 2px solid black;
 }
+#about-me-text {
+    padding: 0 30px;
+    text-align: justify;
+}
 /*#profile-pic {
     border-radius: 50%;
     width: 50px;
@@ -77,19 +81,33 @@ a {
     background-color: green;
 }*/
 #tech-stack {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     
-}
-.tech {
+    margin: 40px auto;
+    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+}
+#tech-flex {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#tech-title {
+    margin: 15px;
+    text-align: center;
+}
+.tech {
+    width: 33%;
+    max-width: 150px;
 }
 img {
-    max-height: 100%;
+    width: 100%;
 }
 h3 {
     font-size: 1.5em;
