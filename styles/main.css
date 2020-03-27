@@ -130,11 +130,18 @@ a {
     align-items: center;
     width: 33%;
     max-width: 150px;
+    padding: 30px;
 }
 .fab {
-    font-size: 15vw;
+    
+    font-size: 10vw;
     -webkit-font-smoothing: antialiased;
 }
+/*@media (min-width: 1200px) {
+  .fab {
+    font-size: 10vw;
+  }
+}*/
 img {
     width: 100%;
 }
@@ -187,4 +194,10 @@ h3 {
     .nav-link {
         font-size: 1em;
     }
+  .tech {
+    padding: 0px;
+  }
+  .fab {
+    font-size: 12vw;
+  }
 }
