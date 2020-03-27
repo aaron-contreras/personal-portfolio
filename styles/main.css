@@ -1,13 +1,9 @@
 body {
     margin: 0;
     font-size: 20px;
+    font-family: "Space Mono", monospace;
 }
-.project-tile {
-    display: block;
-    background-color: orange;
-    height: 50px;
-    margin-bottom: 10px;
-}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -21,7 +17,8 @@ a {
     left: 0;
     width: 100%;
     height: 75px;
-    background-color: lightgray;
+    background-color: #222222;
+    color: white;
 }
 #list {
     margin: auto 0;
@@ -31,18 +28,21 @@ a {
 }
 .nav-link {
     font-size: 1.25em;
-    color: black;
     padding-right: 25px;
     list-style: none;
 }
 #welcome-section {
     height: 100vh;
-    background: rgb(54, 39, 194);
+    background: #333333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin: 0;
+}
+#welcome-section header {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #title{
     color: white;
@@ -55,11 +55,32 @@ a {
     margin-top: 0px;
 }
 #projects {
-    background-color: pink;
+    padding: 25px;
+    background-color: #555555;
+    color: white;
 }
 #projects-title, #about-me-title {
     text-align: center;
 }
+#projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-tile {
+    display: block;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+#about {
+    background-color: #444444;
+    color: white;
+    padding: 20px;
+}
+
 #about-header {
     display: flex;
     justify-content: center;
@@ -91,6 +112,7 @@ a {
 }
 #tech-flex {
     border: 4px solid black;
+    background-color: black;
     border-radius: 10px;
     padding: 10px;
     width: 100%;
@@ -111,4 +133,51 @@ img {
 }
 h3 {
     font-size: 1.5em;
+}
+.social-media {
+    font-size: 3em;
+}
+#contact {
+    color: white;
+    background-color: #777777;
+    padding: 25px;
+}
+#contact-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact h2, p, #email {
+    text-align: center;
+    margin: 5px 0;
+}
+#contact h2 {
+    font-size: 2em;
+}
+#contact p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+#email {
+    display: block;
+    margin: 35px auto 25px auto;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    #contact-container {
+        width: 100%;
+    }
+    #list {
+        justify-content: space-between;
+        
+    }
+    .nav-link {
+        font-size: 1em;
+    }
 }

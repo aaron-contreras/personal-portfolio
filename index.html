@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1">
         <link rel="stylesheet" href="styles/main.css"/>
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/b4937b662a.js" crossorigin="anonymous"></script>
         <title>Aaron Contreras</title>
     </head>
     <body>
@@ -20,8 +24,8 @@
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="#work">
-                        Work
+                    <a href="#contact">
+                        Contact
                     </a>
                 </li>
             </ol>
@@ -46,7 +50,6 @@
             <p id="about-me-text">
                 I'm 20 years old and have always had a love for math, science and logic. I've been self-taught so far and programming is what I enjoy doing the most! I like building cool stuff.
             </p>
-            <div id="about-container"></div>
             
             <div id="tech-stack">
 
@@ -73,16 +76,38 @@
                     Some of the things I've built
                 </h2> 
             </header>
-            <a class="project-tile" href="https://google.com" target="_blank">
-                
-            </a>            
-            <a class="project-tile" target="_blank"></a>
-            <a class="project-tile" target="_blank"></a>
-            <a class="project-tile" target="_blank"></a>
-            
+            <div id="projects-container">
+                <a class="project-tile" href="https://google.com" target="_blank">
+                    <img src="images/projects/tribute-page.png" alt="tribute page project"/>
+                </a>            
+                <a class="project-tile" target="_blank">
+                    <img src="images/projects/product-landing-page.png" alt="steinway and sons product landing page project"/>
+                </a>
+                <a class="project-tile" target="_blank">
+                    <img src="images/projects/technical-documentation.png" alt="technical documentation page project for java notes"/>
+                </a>
+                <a class="project-tile" target="_blank">
+                    <img src="images/projects/survey-form.png" alt="a survey form project about cars"/>
+                </a>
+            </div>
         </section>
-        <section id="conatct">
-            <a id="profile-link">Github account</a>
+        <section id="contact">
+            <h2>Here's some ways to get in contact</h2>
+            <p>or check out more of my work</p>
+            <a id="email" href="mailto: aaronlcaq@gmail.com">aaronlcaq@gmail.com</a>
+
+            <div id="contact-container">
+                <a id="profile-link" class="social-media" href="https://github.com/aaron-contreras" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-media" href="https://www.freecodecamp.org/aaron-contreras">
+                    <i class="fab fa-free-code-camp"></i>
+                </a>
+                <a id="instagram" class="social-media" href="https://www.instagram.com/aaroncontreras_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
         </section>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
